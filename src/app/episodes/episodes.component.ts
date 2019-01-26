@@ -29,9 +29,12 @@ export class EpisodesComponent implements OnInit {
     });*/
   }
 
+
   /** Q4: requêtes via la barre de recherche */
   search(){
-  
+  /** TODO 
+   * exemple de requête dans la barre -> seasonNum:1 and episodeNum:3
+   */
   }
 
    

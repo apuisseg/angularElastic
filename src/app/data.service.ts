@@ -21,7 +21,6 @@ export class DataService {
  
   private client: Client;
 
-  /* Q1 : initier la connexion */
   constructor(private http: HttpClient) { 
     if(!this.client){
       this._connect();
@@ -42,14 +41,14 @@ export class DataService {
     });
   }
 
-  /* Q2: requête: récupérer les documents 10 par 10 (pagination) */
+  /* Q1: requête: récupérer les documents 10 par 10 (pagination) */
   getAllDocuments(_index, _type, num: number): any {
     /*return this.client.search({
       
     });*/
   }
 
-  /* Q3: requête: détails d'un épisode titre, numéros, description, lieux */
+  /* Q2: requête: détails d'un épisode titre, numéros, description, lieux */
   getDocument(_index, _type, title: string): any{
     /*return this.client.search({
       index: 
@@ -63,7 +62,7 @@ export class DataService {
     })*/
   }
   
-  /* Q4 : requête via la barre de recherche*/
+  /* Q3 : requête via la barre de recherche*/
   simpleQuery(_index, _type, query: string, num): any {
     /*return this.client.search({
       index: ,

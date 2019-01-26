@@ -16,12 +16,7 @@ export class DetailEpisodeComponent implements OnInit {
    }
 
   ngOnInit() {
-    this.data.getDocument('got','doc',this.title).then(response => {
-      this.episodeData = response.hits.hits;
-      console.log(this.episodeData);
-    }, error => {
-      console.error(error);
-    });
+    // TO DO récuperer les informations sur le document
   }
 
 }
