@@ -8,11 +8,7 @@ import * as elasticsearch from 'elasticsearch-browser';
   providedIn: 'root'
 })
 export class DataService {
-  private urlTrain:string = "https://ressources.data.sncf.com/api/records/1.0/search/?dataset=objets-trouves-restitution&rows=0&sort=date&facet=gc_obo_gare_origine_r_name";
-  private urlObject:string = "https://ressources.data.sncf.com/api/records/1.0/search/?dataset=objets-trouves-gares&rows=0&sort=date&facet=gc_obo_type_c";
-  private urlLost:string = "https://ressources.data.sncf.com/api/records/1.0/search/?dataset=objets-trouves-gares&rows=0&facet=gc_obo_type_c&refine.gc_obo_gare_origine_r_name=";
-  private urlFound:string = "https://ressources.data.sncf.com/api/records/1.0/search/?dataset=objets-trouves-restitution&rows=0&facet=gc_obo_type_c&refine.gc_obo_gare_origine_r_name=";
-  
+
   private queryalldocs = {
     'query': {
       'match_all': {}
